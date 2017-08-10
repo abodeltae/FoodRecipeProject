@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/recipeDetailScreennToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        >
+
+        <TextView
+            android:id="@+id/recipeDetailScreenTitleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            tools:text="recipe title "
+            android:textStyle="bold|italic"
+            />
+    </android.support.v7.widget.Toolbar>
+
+
+    <ImageView
+        android:id="@+id/recipeDetailScreenRecipeImageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        tools:layout_height="150dp"
+        android:src="@drawable/food_icon"
+        />
+
+    <TextView
+        android:id="@+id/recipeDetailScreenIngredientsLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:padding="5dp"
+        android:text="@string/ingredinte"
+        android:textColor="@color/white"
+        />
+
+    <RelativeLayout
+        android:id="@+id/recipeDetailScreenIngredientsContainerLL"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:divider="@drawable/divider"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        android:layout_weight="1"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recipeDetailScreenIngredientsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"/>
+
+        <ProgressBar
+            android:id="@+id/recipeDetailScreenIngredientsProgressBar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            tools:visibility="visible"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/recipeDetailScreenInfoLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:padding="5dp"
+            android:text="@string/info"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/recipeDetailScreenViewInstructionsTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recipeDetailScreenInfoLabel"
+            android:layout_centerHorizontal="true"
+            android:text="@string/viewInstructions"
+            android:textColor="@color/blue"
+            android:padding="5dp"
+            />
+
+        <TextView
+            android:id="@+id/recipeDetailScreenShowOriginalTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recipeDetailScreenViewInstructionsTv"
+            android:layout_centerHorizontal="true"
+            android:text="@string/viewOriginal"
+            android:textColor="@color/blue"
+            android:padding="5dp"
+            />
+
+        <TextView
+            android:id="@+id/recipeDetailScreenSPublisherTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/recipeDetailScreenShowOriginalTv"
+            android:gravity="bottom"
+            android:padding="5dp"
+            tools:text="publisher name"
+            />
+
+        <TextView
+            android:id="@+id/recipeDetailScreenRankTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/recipeDetailScreenShowOriginalTv"
+            android:layout_toEndOf="@id/recipeDetailScreenSPublisherTv"
+            android:layout_toRightOf="@id/recipeDetailScreenSPublisherTv"
+            android:gravity="end|bottom"
+            android:padding="5dp"
+            tools:text="rank : 95"
+
+
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

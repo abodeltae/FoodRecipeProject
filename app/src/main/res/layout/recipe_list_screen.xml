@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/recipeListToolbar"
+        android:background="@color/blue"
+        android:padding="8dp"
+
+        >
+        <EditText
+            android:id="@+id/recipeListScreenQueryEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:background="@drawable/white_round_corner_bg"
+            android:hint="@string/search_recipe"
+            android:padding="4dp"
+
+            />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recipeListScreenRecyclerListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/recipeListToolbar"
+        android:scrollbars="vertical"
+        android:layout_above="@+id/recipeListScreenLoadingMoreProgressBar"/>
+    <ProgressBar
+        android:id="@+id/recipeListScreenLoadingMoreProgressBar"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:layout_centerInParent="true"/>
+</merge>

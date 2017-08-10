@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:layout_marginLeft="5dp"
+              android:layout_marginRight="5dp"
+              android:padding="10dp"
+    android:background="@drawable/round_corner_bg"
+    >
+    <ImageView
+        android:id="@+id/recipeRowIconIv"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/food_icon"
+        android:paddingBottom="5dp"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:id="@+id/recipeRowTitleTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="very delicious yum yum"
+        android:textColor="@color/text_grey"
+        android:gravity="bottom"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toEndOf="@id/recipeRowIconIv"
+        android:layout_toStartOf="@+id/recipeRowNextArrow"
+        android:layout_toRightOf="@id/recipeRowIconIv"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/recipeRowNextArrow"/>
+    <ImageView
+        android:id="@+id/recipeRowNextArrow"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:src="@drawable/next"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

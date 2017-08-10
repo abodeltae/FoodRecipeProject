@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Food Recipes</string>
+    <string name="ingredinte">Ingredients</string>
+    <string name="info">Info</string>
+    <string name="viewInstructions">View Instructions</string>
+    <string name="viewOriginal">View Original</string>
+    <string name="rankFormat">Social Rank: %.1f</string>
+    <string name="search_recipe">Search For Recipe</string>
+</resources>
